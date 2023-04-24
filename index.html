@@ -1,0 +1,2305 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ala - آلا : مفاتیح الجنان</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="Ala">
+	<meta name="theme-color" content="#3498db">
+
+	<meta name="distribution" content="global">
+	<meta name="author" content="Aftabgardan">
+	<meta name="copyright" content="Copyright (c) by Aftabgardan">
+	<meta name="keywords" content="آلا,ala,مفاتیح,مفاتیح آنلاین,مفاتیح انلاین,mafatih,اپلیکیشن مفاتیح,برنامه مفاتیح,دعا,ذکر,مفاتیح شیخ عباس قمی">
+	<meta name="description" content="آلا، اپلیکیشن آنلاین مفاتیح شیخ عباس قمی است با قابلیت‌های کلیدی فراوان...">
+
+	<link rel="manifest" href="manifest.json">
+	<link rel="icon" href="ala.png">
+	<link rel="apple-touch-icon" href="ala.png">
+
+	<link rel="stylesheet" href="https://static.aftab.cc/css/bootstrap5.rtl.min.css">
+	<link rel="stylesheet" href="https://static.aftab.cc/js/selectize.default.css">
+	<link rel="stylesheet" href="https://static.aftab.cc/css/bootstrap-icons.css">
+
+	<script src="https://static.aftab.cc/js/jquery.min.js"></script>
+	<script src="https://static.aftab.cc/js/selectize.min.js"></script>
+	<script src="https://static.aftab.cc/js/bootstrap5.min.js"></script>
+	<script src="https://static.aftab.cc/js/shake.js"></script>
+	<script src="https://static.aftab.cc/js/hammer.min.js"></script>
+	<script src="https://static.aftab.cc/js/NoSleep.min.js"></script>
+	
+	<link rel="stylesheet" href="themes/default/css/style.css?version=2.0.0.17">
+	<script src="themes/default/js/script.js?version=2.0.0.17"></script>
+		<script>
+		var ref = document.referrer;
+		var loc = document.location;
+		loc = loc.toString();
+		ref = ref.toString();
+		n = "";
+				loc = loc.substring(loc.lastIndexOf('/')+1)
+		if(loc.indexOf("?n")!==-1) //Not home page
+		{
+			setCookie("uri",loc,200);
+		}
+		//Service Worker
+		if ("serviceWorker" in navigator) {
+	    	navigator.serviceWorker
+	      	.register("ServiceWorker.js")
+	      	.then(function (registration) {
+	        	console.log("success load");
+	      	})
+	      	.catch(function (err) {
+	        	console.log(err);
+	      	});
+	   }
+	</script>
+</head>
+<body>
+	<main class="container">
+	  <div class="bg-light p-5 rounded" id="main">
+	  	<h6 class="center besm">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِیمِ</h6>
+	    <h1 id="ala" class="center"><a href="./"><span class="badge bg-info">آلا؛ مفاتیح الجنان</span></a></h1>
+	  		  	<form action="" method="get" id="main_form" onsubmit="return CheckForm();">
+	    <div class="lead">
+	    	<select name="n" id="n" class="form-control mb-4" autofocus>
+	    		<option value="">انتخاب دعا</option>
+	    		
+	<optgroup label="باب اول: ادعیه">
+		<option value="690">
+			مقدمه
+		</option>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل اول در تعقیبات مشترک">
+			<option value="2">
+				تعقیبات مشترک
+			</option>
+			<option value="741" class="sub2">
+				دعای حضرت یوسف(ع) در زندان 
+			</option>
+			<option value="742" class="sub2">
+				دعای تقویت حافظه بعد از هر نماز
+			</option>
+			<option value="743" class="sub2">
+				دعای بعد از نماز ظهر برای باز نشدن پرونده گناهان در قیامت 
+			</option>
+			<option value="744" class="sub2">
+				دعای بعد از تسبیحات حضرت زهرا
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل دوم در تعقیبات مخصوص به هر یک از نمازها">
+			<option value="3">
+				تعقیب نماز ظهر
+			</option>
+			<option value="4">
+				تعقیب نماز عصر
+			</option>
+			<option value="5" class="sound">
+				تعقیب نماز مغرب
+			</option>
+			<option value="745" class="sub2">
+				نماز نافله مغرب 
+			</option>
+			<option value="746" class="sub2">
+				نماز غفیله 
+			</option>
+			<option value="7">
+				تعقیب نماز عشاء
+			</option>
+			<option value="747" class="sub2">
+				دعای رزق و روزی بعد از نماز عشاء
+			</option>
+			<option value="748" class="sub2">
+				نماز وتیره 
+			</option>
+			<option value="8">
+				تعقیب نماز صبح
+			</option>
+			<option value="749" class="sub2">
+				دعای امیرالمؤمنین(ع) در شب هجرت وقتی که جای پیامبر(ص) خوابید 
+			</option>
+			<option value="750" class="sub2">
+				دعای حفظ از کوری و دیوانگی و فقر بعد از نماز صبح 
+			</option>
+			<option value="751" class="sub2">
+				دعای درمان ورم معده، پیسی و دیوانگی بعد از نماز صبح
+			</option>
+			<option value="752" class="sub2">
+				دعای درمان درد چشم بعد از نماز صبح
+			</option>
+			<option value="753" class="sub2">
+				دعای حاجت بعد از نماز صبح 
+			</option>
+			<option value="9" class="sub2">
+				حکایت نافعه برای گشایش کار
+			</option>
+			<option value="695">
+				ذکرهای سجده شکر
+			</option>
+			<option value="10">
+				دعای وقت طلوع و غروب آفتاب
+			</option>
+			<option value="754" class="sub2">
+				دعایی که هر مسلمانی باید پیش از طلوع و غروب آفتاب بخواند
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل سوم در دعاهای ایام هفته‌، نقل از ملحقات صحیفه سجادیه">
+			<option value="11" class="sound">
+				دعای روز شنبه
+			</option>
+			<option value="12" class="sound">
+				دعای روز یکشنبه
+			</option>
+			<option value="13" class="sound">
+				دعای روز دوشنبه
+			</option>
+			<option value="14" class="sound">
+				دعای روز سه شنبه
+			</option>
+			<option value="15" class="sound">
+				دعای روز چهارشنبه
+			</option>
+			<option value="16" class="sound">
+				دعای روز پنجشنبه
+			</option>
+			<option value="17" class="sound">
+				دعای روز جمعه
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل چهارم: فضیلت و اعمال شب و روز جمعه">
+			<option value="18">
+				فضیلت شب و روز جمعه
+			</option>
+			<option value="19">
+				اعمال شب جمعه
+			</option>
+			<option value="755" class="sub2">
+				ثواب فراوان صلوات در شب و روز جمعه 
+			</option>
+			<option value="765" class="sub2">
+				سوره های مخصوص شب‌های جمعه
+			</option>
+			<option value="756" class="sub3">
+				فضیلت خواندن سوره «اسراء» در شب جمعه 
+			</option>
+			<option value="757" class="sub3">
+				فضیلت خواندن سوره «کهف» در شب جمعه 
+			</option>
+			<option value="758" class="sub3">
+				فضیلت خواندن سوره‌هاى «شعراء» و «نمل» و «قصص» در شب جمعه 
+			</option>
+			<option value="759" class="sub3">
+				فضیلت خواندن سوره «سجده» در شب جمعه 
+			</option>
+			<option value="760" class="sub3">
+				فضیلت خواندن سوره «ص» در شب جمعه 
+			</option>
+			<option value="761" class="sub3">
+				فضیلت خواندن سوره «احقاف» در شب و روز جمعه 
+			</option>
+			<option value="762" class="sub3">
+				فضیلت خواندن سوره «واقعه» در شب جمعه 
+			</option>
+			<option value="763" class="sub3">
+				سوره مخصوص امیرالمومنین (علیه‌السلام) 
+			</option>
+			<option value="764" class="sub3">
+				فضیلت خواندن سوره «جمعه» در شب جمعه 
+			</option>
+			<option value="766" class="sub2">
+				نماز های مخصوص شب جمعه 
+			</option>
+			<option value="767" class="sub2">
+				کراهت خواندن شعر در شب جمعه 
+			</option>
+			<option value="768" class="sub2">
+				دعاهای مخصوص شب جمعه 
+			</option>
+			<option value="769" class="sub2">
+				توصیه به خوردن انار در شب جمعه
+			</option>
+			<option value="20">
+				اعمال روز جمعه
+			</option>
+			<option value="770" class="sub2">
+				دعایی که کفاره گناهان بین دو جمعه است.	
+			</option>
+			<option value="771" class="sub2">
+				ثواب تعقیبات بعد از نماز صبح در روز جمعه
+			</option>
+			<option value="772" class="sub2">
+				صلواتی که هر کس آن را بخواند حضرت مهدی را درک می کند.	
+			</option>
+			<option value="773" class="sub2">
+				فضیلت خواندن سوره احقاف در شب و روز جمعه
+			</option>
+			<option value="774" class="sub2">
+				فضیلت خواندن سوره مومنون در شب و روز جمعه
+			</option>
+			<option value="775" class="sub2">
+				اهمیت و ثواب غسل جمعه
+			</option>
+			<option value="1003" class="sub3">
+				ثواب غسل جمعه
+			</option>
+			<option value="1004" class="sub3">
+				دعای غسل جمعه
+			</option>
+			<option value="1005" class="sub3">
+				زمان غسل جمعه
+			</option>
+			<option value="776" class="sub2">
+				شستن سر با گل ختمی در روز جمعه
+			</option>
+			<option value="777" class="sub2">
+				آداب و ثواب گرفتن ناخن و موی پشت لب (نوک سبیل) در روز جمعه 
+			</option>
+			<option value="778" class="sub2">
+				ثواب صدقه در شب و روز جمعه
+			</option>
+			<option value="779" class="sub2">
+				رسیدگی به خانواده در روز جمعه
+			</option>
+			<option value="780" class="sub2">
+				اهمیت خوردن انار قبل از صبحانه روز جمعه
+			</option>
+			<option value="781" class="sub2">
+				اهمیت علم آموزی در روز جمعه 
+			</option>
+			<option value="782" class="sub2">
+				صلوات، محبوب ترین عبادت در روز جمعه 
+			</option>
+			<option value="1006" class="sub2">
+				صلوات های مخصوص روز جمعه 
+			</option>
+			<option value="1007" class="sub2">
+				ثواب صلوات در روز جمعه 
+			</option>
+			<option value="783" class="sub2">
+				ثواب زیارت اهل قبور در روز جمعه
+			</option>
+			<option value="784" class="sub2">
+				نمازهای مستحبی روز جمعه
+			</option>
+			<option value="785" class="sub3">
+				نماز نافله روز جمعه
+			</option>
+			<option value="21" class="sub3">
+				نماز کامله روز جمعه
+			</option>
+			<option value="22" class="sub3 ">
+				نماز حضرت رسول (ص)
+			</option>
+			<option value="23" class="sub3">
+				نماز حضرت امیرالمومنین(ع)
+			</option>
+			<option value="24" class="sub3">
+				نماز حضرت فاطمه (س)
+			</option>
+			<option value="25" class="sub3">
+				نماز سایر امامان (ع)
+			</option>
+			<option value="603" class="sub4 ">
+				نماز حضرت امام حسن مجتبی (ع)
+			</option>
+			<option value="604" class="sub4 ">
+				نماز حضرت امام حسین (ع)
+			</option>
+			<option value="605" class="sub4 ">
+				نماز حضرت امام زین‌العابدین (ع)
+			</option>
+			<option value="606" class="sub4 ">
+				نماز حضرت امام باقر (ع)
+			</option>
+			<option value="607" class="sub4 ">
+				نماز حضرت امام صادق(ع)
+			</option>
+			<option value="608" class="sub4 ">
+				نماز حضرت امام موسی بن جعفر (ع)
+			</option>
+			<option value="609" class="sub4 ">
+				نماز حضرت امام رضا(ع)
+			</option>
+			<option value="610" class="sub4 ">
+				نماز حضرت امام جواد(ع)
+			</option>
+			<option value="611" class="sub4 ">
+				نماز حضرت امام هادی(ع)
+			</option>
+			<option value="612" class="sub4 ">
+				نماز حضرت امام عسکری(ع)
+			</option>
+			<option value="26" class="sub4 ">
+				نماز حضرت صاحب الزمان (ع) و دعای آن حضرت
+			</option>
+			<option value="27" class="sub3">
+				نماز جعفر طیار
+			</option>
+			<option value="28" class="sub2">
+				اعمال ظهر روز جمعه
+			</option>
+			<option value="786" class="sub3">
+				اهمیت خواندن سوره های جمعه و منافقون در ظهر روز جمعه 
+			</option>
+			<option value="787" class="sub3">
+				تعقیب نماز ظهر روز جمعه برای امان از گزند دشمنان و آسیب بلاها
+			</option>
+			<option value="788" class="sub3">
+				نمازی برای روز جمعه که سبب در امان ماندن از فتنه می شود	
+			</option>
+			<option value="29" class="sub2">
+				اعمال عصر جمعه
+			</option>
+			<option value="789" class="sub3">
+				بهترین زمان فرستادن صلوات در روز جمعه 
+			</option>
+			<option value="790" class="sub3">
+				ثواب صد بار خواندن سوره قدر در عصر جمعه
+			</option>
+			<option value="791" class="sub3">
+				ساعت دقیق اجابت دعا در روز جمعه
+			</option>
+			<option value="792">
+				تعلق روز جمعه به امام زمان(عج) 
+			</option>
+			<option value="30" class="sub2">
+				صلوات ابوالحسن ضرّاب اصفهانی
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل پنجم: زیارت های ائمه معصومین(ع) در ایام هفته (تعیین اسامی معصومین(ع) به روزهای هفته)">
+			<option value="696">
+				مقدمه
+			</option>
+			<option value="31" class="sound">
+				زیارت حضرت رسول (ص) در روز شنبه
+			</option>
+			<option value="32" class="sound">
+				زیارت حضرت امیرالمومنین (ع) در یکشنبه
+			</option>
+			<option value="33" class="sound">
+				زیارت حضرت زهرا (س) در روز یکشنبه
+			</option>
+			<option value="34" class="sound">
+				زیارت امام حسن (ع) در روز دوشنبه
+			</option>
+			<option value="35" class="sound">
+				زیارت امام حسین (ع) در روز دوشنبه
+			</option>
+			<option value="36" class="sound">
+				زیارت امام سجاد،  امام باقر, امام صادق (ع) در روز سه شنبه
+			</option>
+			<option value="37" class="sound">
+				زیارت امام موسی کاظم, امام رضا, امام جواد و امام هادی(ع) در روز چهارشنبه
+			</option>
+			<option value="38" class="sound">
+				زیارت امام حسن عسکری  (ع) در روز پنجشنبه
+			</option>
+			<option value="39" class="sound">
+				زیارت امام زمان (ع) در روز جمعه
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل ششم: بیان بعضی از دعاهای مشهور">
+			<option value="40" class="sound">
+				دعای صباح
+			</option>
+			<option value="41" class="sound">
+				دعای کمیل
+			</option>
+			<option value="42" class="sound">
+				دعای عشرات
+			</option>
+			<option value="43" class="sound">
+				دعای سمات
+			</option>
+			<option value="44" class="sound">
+				دعای مشلول
+			</option>
+			<option value="45" class="sound">
+				دعای یستشیر
+			</option>
+			<option value="46" class="sound">
+				دعای مجیر
+			</option>
+			<option value="47" class="sound">
+				دعای عدیله
+			</option>
+			<option value="48" class="sound">
+				دعای جوشن کبیر
+			</option>
+			<option value="49" class="sound">
+				دعای جوشن صغیر
+			</option>
+			<option value="50" class="sound">
+				دعای سیفی صغیر معروف به دعای قاموس
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل هفتم: بعضی آیات و دعاهای نافعه‌ی  مختصره">
+			<option value="51">
+				آیات اسم اعظم
+			</option>
+			<option value="52" class="sound">
+				دعای توسل
+			</option>
+			<option value="53">
+				دعای توسل دیگر
+			</option>
+			<option value="54">
+				دعای فرج
+			</option>
+			<option value="55" class="sound">
+				دعای آزاد شدن از زندان
+			</option>
+			<option value="56" class="sound">
+				دعای نور
+			</option>
+			<option value="57" class="sound">
+				حرز امام زین العابدین (ع)
+			</option>
+			<option value="58">
+				دعای مقاتل بن سلیمان
+			</option>
+			<option value="59">
+				دعایی که جبرئیل به پیغمبر(ص) آموخت
+			</option>
+			<option value="60" class="sound">
+				دعای سریع الاجابه
+			</option>
+			<option value="61">
+				دعای «یا من تحل» برای ایمنی از دشمن و بلا و فقر و پریشانی
+			</option>
+			<option value="62" class="sound">
+				دعای فرج امام زمان (ع)
+			</option>
+			<option value="63" class="sound">
+				دعای «اللهم ارزقنا توفیق الطاعه و بعد المعصیه» از امام زمان (ع)
+			</option>
+			<option value="64">
+				دعای حضرت حجت (ع)
+			</option>
+			<option value="65" class="sound">
+				دعای «الکامل التام»، استغاثه به امام زمان (ع)
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل هشتم: در بیان مناجات ‌ها">
+			<option value="691">
+				مناجات خمس عشر
+			</option>
+			<option value="66" class="sub2  ">
+				مناجات اول: راز و نیاز توبه کنندگان
+			</option>
+			<option value="67" class="sub2  ">
+				مناجات دوم: راز و نیاز شاکیان
+			</option>
+			<option value="68" class="sub2  ">
+				مناجات سوم: راز و نیاز ترسیدگان
+			</option>
+			<option value="69" class="sub2  ">
+				مناجات چهارم: راز و نیاز امیدواران
+			</option>
+			<option value="70" class="sub2  ">
+				مناجات پنجم: راز و نیاز دلدادگان
+			</option>
+			<option value="71" class="sub2  ">
+				مناجات ششم: راز و نیاز شاکران
+			</option>
+			<option value="72" class="sub2  ">
+				مناجات هفتم: راز و نیاز فرمانبران خدا
+			</option>
+			<option value="73" class="sub2  ">
+				مناجات هشتم: راز و نیاز ارادتمندان
+			</option>
+			<option value="74" class="sub2  ">
+				مناجات نهم: راز و نیاز شیفتگان
+			</option>
+			<option value="75" class="sub2  ">
+				مناجات دهم: راز و نیاز توسل جویان
+			</option>
+			<option value="76" class="sub2">
+				مناجات یازدهم: راز و نیاز نیازمندان
+			</option>
+			<option value="77" class="sub2  ">
+				مناجات دوازدهم: راز و نیاز عارفان
+			</option>
+			<option value="78" class="sub2  ">
+				مناجات سیزدهم: راز و نیاز ذاکرین
+			</option>
+			<option value="79" class="sub2  ">
+				مناجات چهاردهم: راز و نیاز پناه جویان
+			</option>
+			<option value="80" class="sub2  ">
+				مناجات پانزدهم: راز و نیاز پارسایان
+			</option>
+			<option value="81" class="sound">
+				مناجات منظوم 
+			</option>
+			<option value="81" class="sub2  ">
+				مناجات منظوم , منسوب حضرت امیر المومنین (ع)
+			</option>
+		</optgroup>
+	</optgroup>
+	<optgroup label="باب دوم: اعمال سال">
+		<option value="794" class="">
+			مقدمه
+		</option>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل اول: فضیلت و اعمال ماه رجب">
+			<option value="82">
+				فضیلت ماه رجب
+			</option>
+			<option value="795" class="">
+				اعمال ماه رجب 
+			</option>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش اول : اعمال مشترکه ماه رجب">
+				<option value="83">
+					اعمال مشترک ماه رجب
+				</option>
+				<option value="84" class="sub2">
+					دعاهای هر روز ماه رجب
+				</option>
+				<option value="796" class="sub2">
+					دعاهای امام زمان(عج) برای ماه رجب
+				</option>
+				<option value="85" class="sound sub2 sound2 ">
+					زیارت رجبیه (الحمدالله الذی اشهدنا)
+				</option>
+				<option value="86" class="sub2">
+					دعای «یا من ارجوه لکل خیر» 
+				</option>
+				<option value="797" class="sub2">
+					استغفار مخصوص ماه رجب
+				</option>
+				<option value="798" class="sub2">
+					ثواب ذکر «لا اله الا الله» در ماه رجب
+				</option>
+				<option value="799" class="sub2">
+					ثواب خواندن سوره توحید(اخلاص) در ماه رجب
+				</option>
+				<option value="800" class="sub2">
+					نمازی برای دیدن جایگاه خود در بهشت
+				</option>
+				<option value="801" class="sub2">
+					نمازی بابرکت برای روز جمعه ماه رجب
+				</option>
+				<option value="802" class="sub2">
+					ثواب روزه پنجشنبه و جمعه و شنبه ماه رجب
+				</option>
+				<option value="803" class="sub2">
+					نمازی برابر با شصت حج و شصت عمره در ماه رجب 
+				</option>
+				<option value="804" class="sub2">
+					دعای آمرزش گناهان، هر چند به عدد قطره‌های باران باشد
+				</option>
+				<option value="805" class="sub2">
+					نمازهای ماه رجب
+				</option>
+				<option value="87" class="">
+					اعمال لیله الرغائب (شب آرزوها)
+				</option>
+				<option value="806" class="">
+					ارزش زیارت امام رضا(ع) و حج عمره در ماه رجب
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش دوم: اعمال مخصوص روزها و شب های ماه رجب">
+				<option value="88">
+					اعمال شب اول ماه رجب
+				</option>
+				<option value="89">
+					اعمال روز اول ماه رجب
+				</option>
+				<option value="90" class="sub2">
+					نماز سلمان
+				</option>
+				<option value="807">
+					روز دوم و سوم و دهم ماه رجب
+				</option>
+				<option value="91">
+					ایام البیض (سیزدهم، چهاردهم و پانزدهم) ماه رجب
+				</option>
+				<option value="92">
+					اعمال شب نیمه‌ی رجب 
+				</option>
+				<option value="809">
+					اعمال روز نیمه رجب
+				</option>
+				<option value="93" class="sound">
+					عمل و دعای ام داود
+				</option>
+				<option value="810">
+					روز بیست و پنجم ماه رجب
+				</option>
+				<option value="94">
+					اعمال شب مبعث
+				</option>
+				<option value="95" class="sub2">
+					گزارش «ابن‌ بطوطه» سنی مذهب از شفای بیماران در نجف اشرف
+				</option>
+				<option value="96" class="sound sub2 sound2 ">
+					دعای شب مبعث 
+				</option>
+				<option value="97">
+					اعمال روز مبعث
+				</option>
+				<option value="808" class="">
+					اعمال روز آخر ماه رجب
+				</option>
+			</optgroup>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل دوم: فضیلت و اعمال ماه شعبان">
+			<option value="98">
+				فضیلت ماه شعبان
+			</option>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش اول: اعمال مشترک ماه شعبان">
+				<option value="99">
+					اعمال مشترک ماه شعبان
+				</option>
+				<option value="811" class="sub2">
+					بهترین دعا و ذکر ماه شعبان 
+				</option>
+				<option value="812" class="sub2">
+					ثواب بسیار صدقه در ماه شعبان 
+				</option>
+				<option value="813" class="sub2">
+					ذکری در ماه شعبان که برابر با عبادت هزار سال است 
+				</option>
+				<option value="814" class="sub2">
+					نماز حاجت مخصوص ماه شعبان 
+				</option>
+				<option value="815" class="sub2">
+					ثواب فراوان روزه در ماه شعبان
+				</option>
+				<option value="100" class="sub2">
+					صلوات هر روز ماه شعبان  
+				</option>
+				<option value="101" class="sub2  ">
+					مناجات شعبانیه (مناجات ائمه (ع) در ماه شعبان)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش دوم: اعمال مخصوص ماه شعبان‌">
+				<option value="102">
+					اعمال شب اول ماه شعبان‌ 
+				</option>
+				<option value="103">
+					اعمال روز اول ماه شعبان  و روایتی شگفت انگیز در فضائل این روز
+				</option>
+				<option value="104" class="sound">
+					اعمال روز سوم ماه شعبان 
+				</option>
+				<option value="816">
+					اعمال شب سیزدهم ماه شعبان
+				</option>
+				<option value="105">
+					فضیلت و اعمال شب نیمه شعبان
+				</option>
+				<option value="817" class="sub2">
+					اهمیت احیای شب نیمه شعبان
+				</option>
+				<option value="818" class="sub2">
+					بهترین عمل در شب نیمه شعبان
+				</option>
+				<option value="819" class="sub2">
+					زیارت امام زمان در شب نیمه شعبان
+				</option>
+				<option value="820" class="sub2">
+					ذکر برآورده شدن حاجات و بخشش گناهان در شب نیمه شعبان
+				</option>
+				<option value="821" class="sub2">
+					بهترین دعا برای شب نیمه شعبان     
+				</option>
+				<option value="822" class="sub2">
+					حکایت نگرانی عایشه در شب نیمه شعبان   
+				</option>
+				<option value="823" class="sub2">
+					نمازهای شب نیمه شعبان 
+				</option>
+				<option value="106">
+					اعمال روز نیمه شعبان 
+				</option>
+				<option value="643">
+					اعمال روزهای آخر ماه شعبان
+				</option>
+				<option value="107" class="sound">
+					دعای شب آخر ماه شعبان و شب اول رمضان
+				</option>
+			</optgroup>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل سوم: فضیلت و اعمال ماه مبارک رمضان">
+			<option value="108">
+				خطبه حضرت رسول (ص) در فضیلت ماه رمضان
+			</option>
+			<option value="824">
+				اعمال ماه مبارک رمضان
+			</option>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مطلب اول: اعمال مشترک ماه مبارک رمضان">
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش اول: اعمال مشترک هر شب و روز ماه رمضان">
+				<option value="109" class="sound">
+					اعمالی که در هر شب و هر روز ماه رمضان بجا آورده می‌شود
+				</option>
+				<option value="828" class="sub2">
+					دعای بعد از هر نماز واجب در ماه رمضان (اللهم ارزقنی حج بیتک الحرام)
+				</option>
+				<option value="829" class="sub2  ">
+					دعای بعد از هر نماز واجب در ماه رمضان (یا علی یا عظیم...)
+				</option>
+				<option value="830" class="sub2  ">
+					دعای بعد از هر نماز واجب در ماه رمضان (اللهم ادخل علی اهل القبور السرور...)
+				</option>
+				<option value="110" class="sub2  ">
+					دعای حج
+				</option>
+				<option value="644" class="sub2">
+					فضیلت تلاوت قرآن در ماه رمضان (ماه رمضان بهار قرآن)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش دوم: اعمال مشترک شب ‌های ماه مبارک رمضان">
+				<option value="645">
+					اعمال شب ‌های ماه رمضان 
+				</option>
+				<option value="831" class="sub2">
+					آداب افطار کردن و افطاری دادن 
+				</option>
+				<option value="832" class="sub2">
+					دعاهای زمان افطار 
+				</option>
+				<option value="833" class="sub2">
+					ثواب افطاری دادن 
+				</option>
+				<option value="834" class="sub2">
+					دعای بخشش گناهان چهل ساله در ماه رمضان 
+				</option>
+				<option value="111" class="sub2  ">
+					دعای افتتاح
+				</option>
+				<option value="112" class="sub2">
+					دو رکعت نمازی که با آن هفتاد هزار گناه بخشیده می‌شود
+				</option>
+				<option value="835" class="sub2">
+					فضیلت خواندن سوره فتح در هر شب ماه رمضان 
+				</option>
+				<option value="113" class="sub2">
+					کیفیت هزار رکعت نماز در ماه رمضان
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش سوم: اعمال مشترک سحرهای ماه مبارک رمضان">
+				<option value="114">
+					اعمال سحرهای ماه مبارک رمضان
+				</option>
+				<option value="836" class="sub2">
+					اهمیت سحری خوردن 
+				</option>
+				<option value="837" class="sub2">
+					ثواب خواندن سوره قدر در سحر و افطار 
+				</option>
+				<option value="115" class="sound sub2 sound2 ">
+					دعای سحر معروف
+				</option>
+				<option value="116" class="sound sub2 sound2 ">
+					دعای ابوحمزه ثمالی 
+				</option>
+				<option value="117" class="sound sub2 sound2 ">
+					دعای سحر دیگر
+				</option>
+				<option value="118" class="sub2  ">
+					مختصرترین دعای سحر  
+				</option>
+				<option value="119" class="sub2  ">
+					تسبیحات در سحر
+				</option>
+				<option value="827" class="sub2  ">
+					نیت روزه و شب زنده داری در سحرهای ماه رمضان
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش چهارم: اعمال مشترک روزهای ماه رمضان">
+				<option value="120">
+					اعمال و دعاهای مشترک روزهای ماه رمضان
+				</option>
+				<option value="838" class="sub2  ">
+					دعای «اللهم هذا شهر رمضان»
+				</option>
+				<option value="121" class="sub2">
+					تسبیحات هر روز ماه رمضان
+				</option>
+				<option value="839" class="sub2  ">
+					صلوات کبیر هر روز ماه رمضان
+				</option>
+				<option value="840" class="sub2  ">
+					دعای «اللهم انی اسالک من فضلک»
+				</option>
+				<option value="841" class="sub2  ">
+					دعای هر روز ماه رمضان که باعث بخشش گناهان چهل ساله می شود
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مطلب دوم: اعمال مخصوص هر شب و روز ماه رمضان">
+				<option value="826">
+					مطلب دوم: اعمال مخصوص هر شب و روز ماه رمضان 
+				</option>
+				<option value="122">
+					اعمال شب اول و رویت هلال ماه رمضان
+				</option>
+				<option value="842" class="sub2">
+					دعاهای زمان دیدن هلال ماه رمضان
+				</option>
+				<option value="123" class="sub2">
+					دعای هلال صحیفه مکرمه
+				</option>
+				<option value="843" class="sub2">
+					نزدیکی با همسر در شب اول ماه رمضان 
+				</option>
+				<option value="844" class="sub2">
+					اهمیت غسل شب اول ماه رمضان 
+				</option>
+				<option value="845" class="sub2">
+					ثواب زیارت امام حسین(علیه‌السلام) در شب اول ماه رمضان 
+				</option>
+				<option value="846" class="sub2">
+					دعایی که رسول خدا(ص) در آغاز ماه رمضان می خواندند 
+				</option>
+				<option value="847" class="sub2">
+					دعای امام صادق(علیه‌السلام) پیش از تلاوت قرآن 
+				</option>
+				<option value="124" class="sub2">
+					دعای امام صادق(علیه‌السلام) بعد از پایان تلاوت قرآن
+				</option>
+				<option value="125">
+					اعمال روز اول ماه رمضان
+				</option>
+				<option value="848" class="sub2">
+					اهمیت غسل در روز اول ماه رمضان
+				</option>
+				<option value="849" class="sub2">
+					گلاب مالیدن بر سر و صورت در روز اول ماه رمضان
+				</option>
+				<option value="850" class="sub2">
+					نماز روز اول ماه رمضان برای دور شدن بدی ها
+				</option>
+				<option value="851" class="sub2">
+					دعای در امان بودن از فتنه و گمراهی و آفت یک سال
+				</option>
+				<option value="646">
+					اعمال روز ششم ماه رمضان
+				</option>
+				<option value="126">
+					اعمال شب سیزدهم ماه رمضان
+				</option>
+				<option value="647">
+					اعمال شب چهاردهم ماه رمضان
+				</option>
+				<option value="127">
+					اعمال شب نیمه ماه رمضان 
+				</option>
+				<option value="852" class="sub2">
+					نماز ایمنی از عذاب دوزخ در شب نیمه ماه رمضان
+				</option>
+				<option value="853" class="sub2">
+					ثواب زیارت امام حسین(علیه‌السلام) در شب نیمه ماه رمضان
+				</option>
+				<option value="854">
+					اعمال روز نیمه ماه رمضان
+				</option>
+				<option value="128">
+					اعمال شب هفدهم ماه رمضان
+				</option>
+				<option value="129">
+					اعمال مشترک شب‌های قدر 
+				</option>
+				<option value="855" class="sub2">
+					غسل شب قدر 
+				</option>
+				<option value="856" class="sub2">
+					نماز شب قدر برای آمرزش خود و پدر و مادر 
+				</option>
+				<option value="857" class="sub2">
+					قرآن به سر گرفتن در شب قدر    
+				</option>
+				<option value="858" class="sub2">
+					زیارت قبر امام حسین در شب قدر     
+				</option>
+				<option value="859" class="sub2">
+					ثواب احیای شب قدر     
+				</option>
+				<option value="860" class="sub2">
+					دعای امام سجاد(علیه‌السلام) در شب‌های قدر
+				</option>
+				<option value="861" class="sub2">
+					بهترین اعمال برای شب قدر 
+				</option>
+				<option value="130">
+					اعمال شب نوزدهم ماه رمضان
+				</option>
+				<option value="131" class="sound">
+					اعمال شب بیست و یکم ماه رمضان
+				</option>
+				<option value="862" class="sub2">
+					شب قدر کدام شب ماه رمضان است؟
+				</option>
+				<option value="863" class="sub2">
+					گزارشی از شب قدر امام صادق(علیه‌السلام)
+				</option>
+				<option value="132" class="sound">
+					اعمال شب‌ های دهه‌ی آخر ماه رمضان 
+				</option>
+				<option value="864" class="sub2">
+					اعتکاف در دهه آخر ماه رمضان
+				</option>
+				<option value="133" class="">
+					اعمال روز بیست و یکم ماه رمضان 
+				</option>
+				<option value="134">
+					دعای شب بیست و دوم ماه رمضان
+				</option>
+				<option value="135">
+					اعمال مخصوص شب بیست و سوم ماه رمضان
+				</option>
+				<option value="865" class="sub2">
+					ثواب خواندن سوره های عنکبوت و روم در شب قدر بیست و سوم ماه رمضان
+				</option>
+				<option value="866" class="sub2">
+					دعای سلامتی امام زمان(عجل‌الله‌فرجه)
+				</option>
+				<option value="867" class="sub2">
+					صد رکعت نماز شب قدر بیست و سوم ماه رمضان
+				</option>
+				<option value="868" class="sub2">
+					بیدار نگه داشتن بچه ها در شب قدر بیست و سوم ماه رمضان
+				</option>
+				<option value="869" class="">
+					روز قدر
+				</option>
+				<option value="136" class="sound">
+					دعای شب بیست و سوم ماه رمضان
+				</option>
+				<option value="137">
+					دعای شب بیست و چهارم ماه رمضان
+				</option>
+				<option value="138">
+					دعای شب بیست و پنجم ماه رمضان
+				</option>
+				<option value="139">
+					دعای شب بیست و ششم ماه رمضان
+				</option>
+				<option value="140">
+					اعمال شب بیست و هفتم ماه رمضان
+				</option>
+				<option value="141">
+					دعای شب بیست و هشتم ماه رمضان
+				</option>
+				<option value="142">
+					دعای شب بیست و نهم ماه رمضان
+				</option>
+				<option value="143">
+					اعمال شب آخر ماه رمضان
+				</option>
+				<option value="870" class="sub2">
+					دعای وداع ماه رمضان
+				</option>
+				<option value="871" class="sub2">
+					نماز شب آخر ماه رمضان که باعث قبولی این ماه می شود
+				</option>
+				<option value="144">
+					دعای شب سی‌ام ماه رمضان
+				</option>
+				<option value="145">
+					دعای روز سی ام ماه رمضان
+				</option>
+				<option value="872" class="sub2">
+					دعای ختم قرآن
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; دعاهای مختصر هر یک از روزهای ماه رمضان">
+				<option value="147">
+					دعاهای مختصر هر یک از روزهای ماه رمضان  
+				</option>
+				<option value="613" class="sub2">
+					دعای روز اول ماه رمضان
+				</option>
+				<option value="614" class="sub2">
+					دعای روز دوم ماه رمضان
+				</option>
+				<option value="615" class="sub2">
+					دعای روز سوم ماه رمضان
+				</option>
+				<option value="616" class="sub2">
+					دعای روز چهارم ماه رمضان
+				</option>
+				<option value="617" class="sub2">
+					دعای روز پنجم ماه رمضان
+				</option>
+				<option value="618" class="sub2">
+					دعای روز ششم ماه رمضان
+				</option>
+				<option value="619" class="sub2">
+					دعای روز هفتم ماه رمضان
+				</option>
+				<option value="620" class="sub2">
+					دعای روز هشتم ماه رمضان
+				</option>
+				<option value="621" class="sub2">
+					دعای روز نهم ماه رمضان
+				</option>
+				<option value="622" class="sub2">
+					دعای روز دهم ماه رمضان
+				</option>
+				<option value="623" class="sub2">
+					دعای روز یازدهم ماه رمضان
+				</option>
+				<option value="624" class="sub2">
+					دعای روز دوازدهم ماه رمضان
+				</option>
+				<option value="625" class="sub2">
+					دعای روز سیزدهم ماه رمضان
+				</option>
+				<option value="626" class="sub2">
+					دعای روز چهاردهم ماه رمضان
+				</option>
+				<option value="627" class="sub2">
+					دعای روز پانزدهم ماه رمضان
+				</option>
+				<option value="628" class="sub2">
+					دعای روز شانزدهم ماه رمضان
+				</option>
+				<option value="629" class="sub2">
+					دعای روز هفدهم ماه رمضان
+				</option>
+				<option value="630" class="sub2">
+					دعای روز هجدهم  ماه رمضان
+				</option>
+				<option value="631" class="sub2">
+					دعای روز نوزدهم ماه رمضان
+				</option>
+				<option value="632" class="sub2">
+					دعای روز بیستم ماه رمضان
+				</option>
+				<option value="633" class="sub2">
+					دعای روز بیست و یکم ماه رمضان
+				</option>
+				<option value="634" class="sub2">
+					دعای روز بیست و دوم ماه رمضان
+				</option>
+				<option value="635" class="sub2">
+					دعای روز بیست و سوم ماه رمضان
+				</option>
+				<option value="636" class="sub2">
+					دعای روز بیست و چهارم ماه رمضان
+				</option>
+				<option value="637" class="sub2">
+					دعای روز بیست و پنجم ماه رمضان
+				</option>
+				<option value="638" class="sub2">
+					دعای روز بیست و ششم ماه رمضان
+				</option>
+				<option value="639" class="sub2">
+					دعای روز بیست و هفتم ماه رمضان
+				</option>
+				<option value="640" class="sub2">
+					دعای روز بیست و هشتم ماه رمضان
+				</option>
+				<option value="641" class="sub2">
+					دعای روز بیست و نهم ماه رمضان
+				</option>
+				<option value="642" class="sub2">
+					دعای روز سی‌ام ماه رمضان
+				</option>
+			</optgroup>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل چهارم: اعمال ماه شوال">
+			<option value="148">
+				اعمال شب عید فطر (شب اول ماه شوال)
+			</option>
+			<option value="874" class="sub2">
+				تکبیرهای عید فطر
+			</option>
+			<option value="875" class="sub2">
+				دعای حاجت در شب عید فطر
+			</option>
+			<option value="876" class="sub2">
+				نماز حاجت و آمرزش گناهان در شب عید فطر
+			</option>
+			<option value="149" class="sub2">
+				نمازی که هر رکعت آن ثواب چهل سال عبادت دارد
+			</option>
+			<option value="150">
+				اعمال روز عید فطر
+			</option>
+			<option value="877" class="sub2">
+				اهمیت زکات فطره
+			</option>
+			<option value="151" class="sub2">
+				آداب و کیفیت نماز عید فطر
+			</option>
+			<option value="878" class="">
+				روز بیست‌ و پنجم ماه شوال
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل پنجم: اعمال ماه ذی القعده">
+			<option value="648">
+				اعمال ماه ذی القعده
+			</option>
+			<option value="152" class="sub2">
+				نماز روز یک ‌شنبه ماه ذی ‌القعده
+			</option>
+			<option value="880" class="sub2">
+				ثواب روزه در ماه های حرام 
+			</option>
+			<option value="881" class="sub2">
+				پاداش و کیفر دو برابری در ماه های حرام 
+			</option>
+			<option value="649">
+				روز یازدهم ماه ذی ‌القعده
+			</option>
+			<option value="650">
+				فضیلت شب نیمه ماه ذی ‌القعده 
+			</option>
+			<option value="153">
+				فضیلت زیارت امام رضا (ع) در بیست و سوم ماه ذی ‌القعده  
+			</option>
+			<option value="154">
+				فضیلت و اعمال شب دحوالارض
+			</option>
+			<option value="879">
+				فضیلت و اعمال روز دحوالارض
+			</option>
+			<option value="651">
+				اعمال روز آخر ماه ذی القعده
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل ششم: اعمال ماه ذی الحجه">
+			<option value="882">
+				فضیلت ماه ذی الحجه 
+			</option>
+			<option value="155">
+				فضیلت و اعمال دهه اول ماه ذی الحجه
+			</option>
+			<option value="156" class="sub2">
+				دو رکعت نماز مشتمل بر آیه «و واعدنا موسی»
+			</option>
+			<option value="889" class="sub2">
+				دعایی که جبرییل برای حضرت عیسی هدیه آورد
+			</option>
+			<option value="890" class="sub2">
+				ذکر «لا اله الا الله» مخصوص دهه اول ذی الحجه
+			</option>
+			<option value="157">
+				اعمال روز اول ماه ذی الحجه
+			</option>
+			<option value="891" class="sub2">
+				دعای امان از شر ستمگر در روز اول ذی الحجه
+			</option>
+			<option value="883" class="">
+				اعمال روز هفتم ماه ذی الحجه
+			</option>
+			<option value="884">
+				اعمال روز هشتم ماه ذی الحجه
+			</option>
+			<option value="158">
+				فضیلت و اعمال شب عرفه 
+			</option>
+			<option value="892" class="sub2">
+				دعای آمرزش از گناهان در شب‌های جمعه و شب عرفه
+			</option>
+			<option value="159">
+				فضیلت و اعمال روز عرفه  
+			</option>
+			<option value="893" class="sub2">
+				صلواتی که باعث سرور محمد و آل‌محمد می شود
+			</option>
+			<option value="885" class="sub2">
+				ثواب زیارت امام حسین(علیه‌السلام) در روز عرفه
+			</option>
+			<option value="160" class="sub2">
+				دعای امام حسین (ع) در روز عرفه
+			</option>
+			<option value="886" class="">
+				فضیلت و اعمال شب عید قربان
+			</option>
+			<option value="161">
+				اعمال روز عید قربان 
+			</option>
+			<option value="894" class="sub2">
+				تکبیرهای عید قربان
+			</option>
+			<option value="887">
+				روز پانزدهم ماه ذی الحجه
+			</option>
+			<option value="888" class="">
+				اعمال شب عید غدیر 
+			</option>
+			<option value="162">
+				فضیلت و اعمال روز عید غدیر 
+			</option>
+			<option value="895" class="sub2">
+				ثواب روزه عید غدیر
+			</option>
+			<option value="163" class="sound sub2 sound2 ">
+				نماز روز عید غدیر
+			</option>
+			<option value="896" class="sub2">
+				ذکر روز عید غدیر هنگام ملاقات دیگران
+			</option>
+			<option value="164" class="sub2">
+				صیغه عقد اخوت و برادری در روز غدیر 
+			</option>
+			<option value="165" class="sound">
+				فضیلت و اعمال روز مباهله
+			</option>
+			<option value="897" class="sub2">
+				دعای مباهله
+			</option>
+			<option value="652">
+				اعمال روز بیست و پنجم ذی الحجه
+			</option>
+			<option value="166">
+				اعمال روز آخر ذی الحجه
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل هفتم: اعمال ماه محرم">
+			<option value="898">
+				محرم؛ ماه حزن اهل بیت(ع)
+			</option>
+			<option value="899">
+				اعمال شب اول ماه محرم 
+			</option>
+			<option value="900" class="sub2">
+				نماز با فضیلت شب اول ماه محرم
+			</option>
+			<option value="167">
+				اعمال روز اول ماه محرم 
+			</option>
+			<option value="902" class="sub2">
+				ثواب روزه روز اول ماه محرم
+			</option>
+			<option value="901" class="sub2">
+				روزه در ماه محرم
+			</option>
+			<option value="653">
+				اعمال روز سوم ماه محرم
+			</option>
+			<option value="654">
+				اعمال روز نهم ماه محرم
+			</option>
+			<option value="168">
+				اعمال شب عاشورا 
+			</option>
+			<option value="903">
+				اعمال روز عاشورا 
+			</option>
+			<option value="169" class="sub2">
+				بیان آنکه روز عاشورا روز شوم است
+			</option>
+			<option value="170" class="sub2">
+				وجوه تبرک بنی امیه به روز عاشورا
+			</option>
+			<option value="171" class="sub2">
+				در مجهول بودن دعایی که مشتمل است بر فضیلت روز عاشورا
+			</option>
+			<option value="172" class="sub2">
+				اعمال ساعات آخر روز عاشورا  
+			</option>
+			<option value="904">
+				روز بیست‌ و پنجم ماه محرم
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل هشتم: اعمال ماه صفر">
+			<option value="173">
+				بیان نحوست ماه صفر و راه رفع آن
+			</option>
+			<option value="655">
+				روز اول ماه صفر
+			</option>
+			<option value="656">
+				روز سوم ماه صفر
+			</option>
+			<option value="657">
+				روز هفتم ماه صفر
+			</option>
+			<option value="174">
+				روز اربعین
+			</option>
+			<option value="175">
+				روز بیست و هشتم صفر
+			</option>
+			<option value="658">
+				روز آخر ماه صفر 
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل نهم: اعمال ماه ربیع الاول">
+			<option value="176">
+				شب اول ماه ربیع‌ الاول
+			</option>
+			<option value="905">
+				اعمال روز اول ماه ربیع‌ الاول
+			</option>
+			<option value="659">
+				اعمال روز هشتم ماه ربیع الاول
+			</option>
+			<option value="906">
+				روز نهم ماه ربیع الاول
+			</option>
+			<option value="907">
+				اعمال روز دوازدهم ماه ربیع‌ الاول
+			</option>
+			<option value="908">
+				روز چهاردهم ماه ربیع‌ الاول
+			</option>
+			<option value="177">
+				شب هفدهم ماه ربیع‌ الاول
+			</option>
+			<option value="178">
+				اعمال روز هفدهم ماه ربیع‌ الاول (روز میلاد حضرت رسول)
+			</option>
+			<option value="909" class="sub2">
+				ثواب روزه هفدهم ربیع الاول (روز میلاد پیامبر اکرم)
+			</option>
+			<option value="910" class="sub2">
+				اهمیت بزرگداشت روز میلاد پیامبر(ص)
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل دهم: اعمال ماه ربیع الثانی, جمادی الاول و جمادی الآخر">
+			<option value="179">
+				اعمال ماه ربیع الثانی 
+			</option>
+			<option value="660">
+				اعمال ماه جمادی الاول
+			</option>
+			<option value="180">
+				اعمال ماه جمادی ‌الآخر و چهار رکعت نماز آن
+			</option>
+			<option value="181">
+				اعمال روز سوم جمادی ‌الآخر، روز وفات حضرت فاطمه زهرا(س)
+			</option>
+			<option value="182">
+				اعمال روز بیستم جمادی ‌الآخر، روز ولادت حضرت فاطمه زهرا(س)
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل یازدهم: اعمال هر ماه نو و عید نوروز و اعمال ماه های  رومی">
+			<option value="183">
+				اعمال  هر ماه نو و نماز اول آن ماه
+			</option>
+			<option value="911" class="sub2  ">
+				اهمیت خوردن پنیر در اول هر ماه قمری
+			</option>
+			<option value="912" class="sub2  ">
+				نماز شب اول ماه قمری
+			</option>
+			<option value="913" class="sub2  ">
+				نماز روز اول ماه قمری
+			</option>
+			<option value="184" class="sound">
+				اعمال عید نوروز
+			</option>
+			<option value="914" class="sub2  ">
+				دعای لحظه تحویل سال 
+			</option>
+			<option value="185">
+				اعمال ماه‌ های رومی (شمسی)
+			</option>
+			<option value="186" class="sub2">
+				آداب گرفتن آب نیسان وخواص آن
+			</option>
+			<option value="915" class="sub2  ">
+				بهترین زمان حجامت بر اساس روایات (هفتم یا چهاردهم حزیران)
+			</option>
+			<option value="916" class="sub2  ">
+				نحسی ماه حزیران
+			</option>
+			<option value="917" class="sub2  ">
+				ماه‌ های رومی
+			</option>
+		</optgroup>
+	</optgroup>
+	<optgroup label="باب سوم: زیارات">
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقدمه">
+			<option value="187">
+				آداب سفر
+			</option>
+			<option value="918" class="sub2">
+				روزهای مناسب سفر در هفته و ماه
+			</option>
+			<option value="919" class="sub2">
+				اهمیت صدقه دادن قبل از سفر
+			</option>
+			<option value="920" class="sub2">
+				دعای سفر
+			</option>
+			<option value="921" class="sub2">
+				فضیلت همراه داشتن انگشتر عقیق و فیروزه در سفر
+			</option>
+			<option value="188" class="sub2  ">
+				خبر صافی، خادم امام هادی(ع) و مسافرت او به مشهد
+			</option>
+			<option value="922" class="sub2">
+				ارزش خواندن آیت‌الکرسی در سفر
+			</option>
+			<option value="189">
+				آداب مسافرین
+			</option>
+			<option value="923" class="sub2  ">
+				ثواب و ارزش کمک به دیگران در سفر 
+			</option>
+			<option value="924" class="sub2  ">
+				لزوم اهمیت دادن به نماز در سفر 
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل اول: آداب زیارت">
+			<option value="190">
+				آداب زیارت
+			</option>
+			<option value="925" class="sub2  ">
+				آداب اذن دخول خواندن
+			</option>
+			<option value="926" class="sub2">
+				داستان تنبیه علی بن یقطین از سوی امام کاظم(ع) 
+			</option>
+			<option value="927" class="sub2  ">
+				بوسیدن عتبه و آستانه حرم اهل بیت (ع) 
+			</option>
+			<option value="928" class="sub2">
+				بوسیدن ضریح 
+			</option>
+			<option value="929" class="sub2">
+				تکبیر گفتن هنگام دیدن قبر اهل بیت(ع) 
+			</option>
+			<option value="930" class="sub2">
+				نماز زیارت 
+			</option>
+			<option value="931" class="sub2">
+				اهمیت نماز جماعت در حرم 
+			</option>
+			<option value="193" class=" sub2">
+				وظایف خادمان حرم اهل بیت(ع)
+			</option>
+			<option value="191" class="sub2">
+				کلامی در زیارت زن ‌ها  و مذمت مزاحمت ایشان با نامحرمان
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل دوم: اذن دخول حرم‌ های  شریفه">
+			<option value="192" class="sound">
+				اذن دخول حرم‌ های  شریفه
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل سوم: زیارت حضرت رسول(ص) و حضرت فاطمه(س) و ائمه بقیع(ع)">
+			<option value="194">
+				فضیلت زیارت حضرت رسول(ص)  و حضرت فاطمه(ع) و ائمه بقیع(ع) 
+			</option>
+			<option value="195" class="sound">
+				کیفیت زیارت حضرت رسول(ص) در مدینه
+			</option>
+			<option value="196">
+				اعمال روضه منوره
+			</option>
+			<option value="197" class="sound">
+				زیارت حضرت فاطمه(ع) 
+			</option>
+			<option value="198" class="sound">
+				زیارت حضرت رسول(ص) از راه دور
+			</option>
+			<option value="199" class="sound">
+				زیارت حضرت رسول(ص) و ائمه هدی(ع) در روزهای جمعه از راه دور
+			</option>
+			<option value="200">
+				صلوات بر حضرت رسول(ص) و فضیلت آن
+			</option>
+			<option value="201" class="sound">
+				زیارت ائمه بقیع(ع)
+			</option>
+			<option value="202">
+				قطعه ای از قصیده ازری
+			</option>
+			<option value="661">
+				ذکر سایر زیارات در مدینه طیبه به نقل از کتاب «مصباح الزائر» و غیر آن
+			</option>
+			<option value="661" class="sub2">
+				زیارت ابراهیم پسر رسول خدا
+			</option>
+			<option value="203" class="sub2">
+				زیارت جناب فاطمه بنت اسد(ع)
+			</option>
+			<option value="204" class="sub2">
+				زیارت حضرت حمزه(ع)
+			</option>
+			<option value="205" class="sub2">
+				فضیلت زیارت حضرت حمزه(ع)
+			</option>
+			<option value="206" class="sub2">
+				زیارت  شهدای احد
+			</option>
+			<option value="207">
+				ذکر مساجد معظمه در مدینه(مانند مسجد قباو..)
+			</option>
+			<option value="208" class="sound">
+				زیارت وداع حضرت رسول(ص)
+			</option>
+			<option value="209">
+				فضیلت مسجدالنبی و تکالیف زوار در مدینه طیبه  
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل چهارم: زیارت حضرت امیرالمؤمنین(ع)">
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مطلب اول: در فضیلت زیارت آن حضرت">
+				<option value="210">
+					فضیلت زیارت حضرت امیرالمومنین(ع)
+				</option>
+				<option value="211">
+					ظاهر شدن قبر حضرت امیرالمؤمنین(ع) در زمان هارون
+				</option>
+				<option value="212">
+					قصه احمی من مجیر الجراد
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مطلب دوم: کیفیت زیارت حضرت امیرالمؤمنین(ع)">
+				<option value="213">
+					کیفیت زیارت حضرت امیرالمؤمنین(ع)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقصد اول: زیارات مطلقه">
+				<option value="214" class="sound">
+					زیارت اول حضرت امیرالمؤمنین
+				</option>
+				<option value="215" class="sound">
+					قطعه ای از قصیده ازریه
+				</option>
+				<option value="216">
+					دعاهای بعد از زیارت و نماز در نجف اشرف
+				</option>
+				<option value="217" class="sound">
+					زیارت سر امام حسین(ع) نزد قبر امیرالمؤمنین(ع) و در مسجد حنانه 
+				</option>
+				<option value="218" class="sound">
+					زیارت دوم حضرت امیرالمؤمنین (زیارت امین ‌الله)
+				</option>
+				<option value="219">
+					زیارت سوم حضرت امیرالمؤمنین
+				</option>
+				<option value="220">
+					زیارت چهارم حضرت امیرالمؤمنین
+				</option>
+				<option value="221">
+					زیارت پنجم حضرت امیرالمؤمنین
+				</option>
+				<option value="222">
+					زیارت ششم حضرت امیرالمؤمنین
+				</option>
+				<option value="223">
+					زیارت هفتم حضرت امیرالمؤمنین
+				</option>
+				<option value="224">
+					آمدن حضرت امام زین العابدین(ع) به زیارت امیرالمومنین(ع)
+				</option>
+				<option value="932">
+					سایر زیارات مطلقه امیرالمومنین(ع)
+				</option>
+				<option value="933">
+					اهمیت و ارزش نماز و مجاورت در حرم امیرالمومنین(ع)
+				</option>
+				<option value="225" class="sound">
+					زیارت وداع حضرت امیرالمؤمنین  (ع)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقصد دوم: زیارات مخصوصه">
+				<option value="226" class="sound">
+					زیارت حضرت امیرالمؤمنین در روز غدیر 
+				</option>
+				<option value="227">
+					زیارت بعد از نماز در روز عید غدیر
+				</option>
+				<option value="228">
+					زیارت امیرالمؤمنین(ع) در روز میلاد پیغمبر(ص)
+				</option>
+				<option value="229">
+					در اتحاد حضرت امیرالمؤمنین(ع) با پیغمبر(ص)
+				</option>
+				<option value="230">
+					زیارت حضرت امیرالمؤمنین در شب و روز مبعث 
+				</option>
+			</optgroup>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل پنجم: فضیلت مسجد کوفه و اعمال آن">
+			<option value="231">
+				فضیلت مسجد کوفه
+			</option>
+			<option value="232">
+				اعمال مسجد کوفه
+			</option>
+			<option value="233" class="sub2">
+				اعمال دکّة القضاء و بیت الطشت
+			</option>
+			<option value="934" class="sub3">
+				معجزه امیرالمؤمنین در حق دختر بی شوهر
+			</option>
+			<option value="234" class="sub2">
+				انجام نماز و دعا در وسط مسجد کوفه
+			</option>
+			<option value="235" class="sub2">
+				اعمال ستون هفتم مسجد کوفه
+			</option>
+			<option value="236" class="sub2">
+				اعمال ستون پنجم مسجد کوفه
+			</option>
+			<option value="237" class="sub2">
+				اعمال ستون سوم مسجد کوفه
+			</option>
+			<option value="238" class="sub2">
+				نماز حاجت در مقام حضرت نوح(ع) مسجد کوفه
+			</option>
+			<option value="662" class="sub2">
+				اعمال محراب حضرت امیرالمؤمنین
+			</option>
+			<option value="239" class="sub3">
+				مناجات حضرت امیرالمؤمنین(ع)  در مسجد کوفه
+			</option>
+			<option value="935" class="sub2">
+				اعمال مقام امام صادق(ع) در مسجد کوفه
+			</option>
+			<option value="240" class="sub2">
+				کیفیت نماز حاجت در مسجد کوفه
+			</option>
+			<option value="241" class="sound">
+				زیارت جناب مسلم بن عقیل(ع)
+			</option>
+			<option value="242">
+				زیارت جناب هانی(ع)
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل ششم: فضیلت و اعمال مسجد سهله و مسجد زید و صعصعه">
+			<option value="243">
+				فضیلت و اعمال مسجد سهله 
+			</option>
+			<option value="244">
+				فضیلت و اعمال مسجد زید 
+			</option>
+			<option value="245">
+				فضیلت و اعمال مسجد صعصعه 
+			</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل هفتم: زیارت امام حسین(ع)">
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقصد اول : فضیلت زیارت امام حسین(ع)">
+				<option value="246">
+					فضیلت  زیارت  امام حسین(ع)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقصد دوم : آداب مخصوص زیارت امام حسین (ع)">
+				<option value="247">
+					آداب مخصوص زیارت امام حسین (ع) 
+				</option>
+				<option value="937" class="sub2">
+					سه روز روزه قبل از زیارت امام حسین(ع) 
+				</option>
+				<option value="938" class="sub2">
+					عرق زائر امام حسین(ع)
+				</option>
+				<option value="939" class="sub2">
+					لزوم محزون و غمناک و گرسنه و تشنه بودن در زیارت امام حسین(ع)  
+				</option>
+				<option value="940" class="sub2">
+					پرهیز از غذاهای لذیذ در زیارت امام حسین(ع) 
+				</option>
+				<option value="941" class="sub2">
+					لزوم تواضع و فروتنی و خشوع در زیارت امام حسین(ع) 
+				</option>
+				<option value="942" class="sub2">
+					ثواب پیاده روی برای زیارت امام حسین(ع) 
+				</option>
+				<option value="943" class="sub2">
+					ثواب خدمت و کمک به زائران امام حسین(ع) 
+				</option>
+				<option value="944" class="sub2">
+					برابری زیارت امام حسین(ع) با حج خانه 
+				</option>
+				<option value="945" class="sub2">
+					ثواب فراوان غسل در آب فرات
+				</option>
+				<option value="946" class="sub2">
+					از کدام در وارد حرم امام حسین(ع) شویم؟    
+				</option>
+				<option value="947" class="sub2">
+					اعمال و آداب لحظه رسیدن به قبر امام حسین(ع) 
+				</option>
+				<option value="948" class="sub2">
+					تسبیح حضرت علی و فاطمه در کنار قبر امام حسین(ع) 
+				</option>
+				<option value="949" class="sub2">
+					ثواب نماز در حرم امام حسین(ع)
+				</option>
+				<option value="248" class="sub2  ">
+					ارزش دعا در حرم امام حسین(ع)
+				</option>
+				<option value="249" class="sub2  ">
+					صلوات بر امام حسین(ع)
+				</option>
+				<option value="250" class="sub2">
+					اعمال حرم امام حسین(ع)  
+				</option>
+				<option value="950" class="sub3">
+					دعای مظلوم علیه ظالم در حرم امام حسین(ع) 
+				</option>
+				<option value="951" class="sub3">
+					دستوری برای برآورده شدن حاجت در حرم امام حسین(ع) 
+				</option>
+				<option value="952" class="sub3">
+					نمازی در حرم امام حسین(ع) که برابر با بیست و پنج حج با رسول خداست 
+				</option>
+				<option value="953" class="sub3">
+					استخاره در حرم امام حسین(ع) 
+				</option>
+				<option value="954" class="sub3">
+					لزوم سکوت در حرم امام حسین(ع) 
+				</option>
+				<option value="955" class="sub3">
+					گریه ملائکه بر امام حسین(ع)
+				</option>
+				<option value="956" class="sub3">
+					ثواب گریه در حرم امام حسین(ع)
+				</option>
+				<option value="251" class="sound sub2 sound2 ">
+					زیارت وداع امام حسین(ع)  
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقصد سوم : کیفیت زیارت امام حسین و حضرت عباس(ع)">
+				<option value="252">
+					کیفیت زیارت امام حسین و حضرت عباس(ع)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش اول: زیارت مطلقه امام حسین(ع)">
+				<option value="253">
+					زیارت اول امام حسین(ع)
+				</option>
+				<option value="254">
+					زیارت دوم امام حسین(ع)
+				</option>
+				<option value="255">
+					زیارت سوم امام حسین(ع)
+				</option>
+				<option value="256">
+					زیارت چهارم امام حسین(ع)
+				</option>
+				<option value="257">
+					زیارت پنجم امام حسین(ع)
+				</option>
+				<option value="258">
+					زیارت ششم امام حسین(ع)
+				</option>
+				<option value="259" class="sound">
+					زیارت هفتم امام حسین(ع) (زیارت وارث)  
+				</option>
+				<option value="1002" class="sound sub2">
+					زیارت وارث  مختصر به همراه ترجمه و صوت  
+				</option>
+				<option value="260">
+					بیان آنچه به زیارت وارث زیاد شده
+				</option>
+				<option value="261">
+					در مجعولیت دعای حبی و امثال آن
+				</option>
+				<option value="262">
+					طعن بر مداخله کردن نا اهلان در کتب حدیث و اخبار و ادعیه
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش دوم : زیارت حضرت عباس (ع)">
+				<option value="263" class="sound">
+					زیارت حضرت عباس (ع)
+				</option>
+				<option value="957">
+					زیارت وداع حضرت عباس(ع)
+				</option>
+				<option value="958">
+					جایگاه حضرت عباس(ع) در بهشت
+				</option>
+				<option value="264">
+					مرثیه ام البنین مادر حضرت عباس(ع)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش سوم : زیارت ‌های مخصوصه حضرت امام حسین(ع)">
+				<option value="265">
+					زیارت مخصوصه حضرت امام حسین(ع)
+				</option>
+				<option value="266" class="sound">
+					اول: زیارت امام حسین(ع) در اول و نیمه رجب و نیمه شعبان 
+				</option>
+				<option value="960" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در روز اول ماه رجب
+				</option>
+				<option value="267" class="sound">
+					دوم: زیارت امام حسین(ع) در نیمه رجب 
+				</option>
+				<option value="961" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در روز نیمه ماه رجب
+				</option>
+				<option value="268" class="sound">
+					سوم: زیارت امام حسین(ع) در نیمه شعبان 
+				</option>
+				<option value="962" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در روز نیمه ماه شعبان
+				</option>
+				<option value="269" class="sound">
+					چهارم: زیارت امام حسین(ع) در شب ‌های قدر 
+				</option>
+				<option value="963" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در شب‌ قدر
+				</option>
+				<option value="270" class="sound">
+					پنجم: زیارت امام حسین(ع) در عید فطر و قربان 
+				</option>
+				<option value="964" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در روز عید فطر و قربان
+				</option>
+				<option value="271" class="sound">
+					ششم: زیارت امام حسین(ع) در روز عرفه
+				</option>
+				<option value="965" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در روز عرفه
+				</option>
+				<option value="272">
+					هفتم: زیارت امام حسین(ع) در روز عاشورا 
+				</option>
+				<option value="273" class="sub2">
+					متن زیارت عاشورای معروف 
+				</option>
+				<option value="274" class="sub2">
+					دعای بعد از زیارت عاشورا معروف به دعای علقمه
+				</option>
+				<option value="275" class="sub2">
+					فضیلت و ثواب خواندن زیارت عاشورا 
+				</option>
+				<option value="276" class="sub2">
+					فوائد و اثرات بی نظیر مداومت بر خواندن زیارت عاشورا 
+				</option>
+				<option value="277" class="sub2">
+					زیارت عاشورای غیر معروف 
+				</option>
+				<option value="278" class="sound">
+					هشتم: زیارت اربعین امام حسین(ع)
+				</option>
+				<option value="966" class="sub2">
+					زیارت اربعین از نشانه‌های اهل ایمان
+				</option>
+				<option value="279">
+					بهترین اوقات و زمان‌ها برای زیارت امام حسین (ع)
+				</option>
+				<option value="967" class="sub2">
+					فضیلت و ثواب زیارت امام حسین(ع) در شب‌های جمعه
+				</option>
+				<option value="968">
+					فضیلت و ثواب زیارت امام حسین(ع) از راه دور
+				</option>
+				<option value="280">
+					فوائد و فضیلت بی‌نظیر تربت امام حسین(ع) و آداب استفاده از آن
+				</option>
+			</optgroup>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل هشتم: فضیلت و کیفیت زیارت کاظمین(ع) و ذکر مسجد براثا و زیارت نواب اربعه و زیارت جناب سلمان">
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش اول: فضیلت و کیفیت زیارت کاظمین">
+				<option value="281">
+					فضیلت و کیفیت زیارت کاظمین، امام کاظم(ع) و امام جواد(ع)
+				</option>
+				<option value="282" class="sound">
+					زیارت امام موسی کاظم(ع) 
+				</option>
+				<option value="283" class="sound">
+					صلوات بر امام موسی کاظم(ع) 
+				</option>
+				<option value="284" class="sound">
+					زیارت مختص امام محمدتقی(ع)
+				</option>
+				<option value="970">
+					صلوات بر امام محمد تقی(ع)
+				</option>
+				<option value="285">
+					زیارت مشترک کاظمین، امام کاظم(ع) و امام جواد(ع)
+				</option>
+				<option value="971">
+					زیارت وداع کاظمین، امام کاظم(ع) و امام جواد(ع)
+				</option>
+				<option value="286">
+					حکایت حاجی علی بغدادی
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش دوم : تاریخ و فضیلت مسجد براثا">
+				<option value="287">
+					تاریخ و فضیلت مسجد براثا
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش سوم : زیارت نواب اربعه(ره) و شیخ کلینی(ره)">
+				<option value="288">
+					زیارت نواب اربعه(ره)
+				</option>
+				<option value="289">
+					زیارت شیخ کلینی(ره) 
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش چهارم : فضائل و زیارت جناب سلمان و حذیفه">
+				<option value="290">
+					فضائل و زیارت جناب سلمان(ع)
+				</option>
+				<option value="972">
+					اعمال بعد از زیارت جناب سلمان (نماز در طاق کسری و زیارت جناب حذیفه)
+				</option>
+				<option value="291">
+					گذر و نماز حضرت امیرالمومنین(ع) در طاق کسری
+				</option>
+				<option value="292">
+					زیارت جناب حذیفه در مدائن
+				</option>
+				<option value="973">
+					نماز در مسجد جامع مدائن
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل نهم: فضیلت و کیفیت زیارت امام رضا(ع)">
+				<option value="293">
+					فضیلت زیارت امام رضا(ع)
+				</option>
+				<option value="294" class="sound">
+					کیفیت زیارت امام رضا(ع)
+				</option>
+				<option value="295">
+					دعای بعد از زیارت امام رضا(ع)
+				</option>
+				<option value="974">
+					صلوات مخصوص امام رضا(ع)
+				</option>
+				<option value="975">
+					زیارت کوتاه و مختصر امام رضا(ع)
+				</option>
+				<option value="296" class="sound">
+					زیارت وداع حضرت امام رضا(ع)
+				</option>
+				<option value="297">
+					چند نکته مهم در باب زیارت امام رضا(ع)
+				</option>
+				<option value="976">
+					نماز حاجت در حرم امام رضا(ع)
+				</option>
+				<option value="977">
+					فضیلت و ثواب نماز جعفر در حرم امام رضا(ع)
+				</option>
+				<option value="298">
+					سفر حضرت امام رضا(ع) به خراسان و عبور از شهرهای قم و نیشابور و سناباد
+				</option>
+				<option value="978">
+					حدیث سلسلة الذهب
+				</option>
+				<option value="299">
+					پیاده رفتن شاه عباس به مشهد
+				</option>
+				<option value="300">
+					متن کتیبه قبّه مطهّر حرم امام رضا(ع)
+				</option>
+				<option value="663">
+					معجزات حضرت امام رضا(ع) 
+				</option>
+				<option value="301">
+					اشعار جامی در مدح حضرت امام رضا(ع)
+				</option>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل دهم: زیارت ائمه سر من رأی و اعمال سرداب مطهر">
+				<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقام اول : زیارت امامین عسکریین(ع) ، مادر امام زمان و امام زادگان سامرا">
+					<option value="302" class="sound">
+						زیارت مشترک امامین عسکریین، حضرت هادى(ع) و امام حسن عسکرى(ع)  
+					</option>
+					<option value="303">
+						زیارت مخصوص امام علی النقی، حضرت هادی(ع) 
+					</option>
+					<option value="304" class="sound">
+						زیارت مخصوص امام حسن عسگری(ع)
+					</option>
+					<option value="305" class="sound">
+						زیارت نرجس خاتون، مادر حضرت مهدی(ع) 
+					</option>
+					<option value="980">
+						ثواب کسی که یکی از امامان(ع) را زیارت کند
+					</option>
+					<option value="306">
+						زیارت جناب حکیمه خاتون، عمه امام حسن عسکری(ع)
+					</option>
+					<option value="307">
+						جلالت امامزاده سید حسین فرزند حضرت هادی(ع)  
+					</option>
+					<option value="308">
+						فضیلت و زیارت سید محمد فرزند امام هادی(ع) 
+					</option>
+					<option value="981">
+						زیارت وداع امامین عسکریین، حضرت هادى(ع) و امام حسن عسکرى(ع)  
+					</option>
+				</optgroup>
+				<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقام دوم : آداب سرداب مطهر و کیفیت زیارت امام مهدی (ع)">
+					<option value="309">
+						تاریخچه‌ی سرداب مطهر
+					</option>
+					<option value="982">
+						اذن دخول سرداب مطهر
+					</option>
+					<option value="310">
+						زیارت ‌های حضرت صاحب ‌الامر(ع)  
+					</option>
+					<option value="983" class="sub2">
+						زیارت اول امام زمان(عج): زیارت آل یاسین
+					</option>
+					<option value="984" class="sub2">
+						زیارت دوم امام زمان(عج): زیارت مخصوص سرداب مطهر
+					</option>
+					<option value="985" class="sub2">
+						زیارت سوم امام زمان(عج)
+					</option>
+					<option value="311" class="sub2">
+						صلوات بر امام زمان(ع)  
+					</option>
+					<option value="986" class="sub2">
+						زیارت چهارم امام زمان(عج)
+					</option>
+					<option value="987">
+						دعاها و زیارت های نقل شده از کتاب مصباح سید بن طاووس
+					</option>
+					<option value="312" class="sub2  ">
+						دعای ندبه
+					</option>
+					<option value="313" class="sub2  ">
+						زیارت پنجم امام زمان(عج): زیارت بعد از نماز صبح 
+					</option>
+					<option value="314" class="sub2  ">
+						دعای عهد
+					</option>
+					<option value="315" class="sub2">
+						دعا برای امام عصر(ع)  
+					</option>
+				</optgroup>
+			</optgroup>
+			<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; فصل یازدهم: زیارت جامعه">
+				<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقام اول : زیارت جامعه همه امامان">
+					<option value="316">
+						زیارت جامعه همه امامان
+					</option>
+					<option value="317" class="sound">
+						زیارت جامعه صغیره
+					</option>
+					<option value="318" class="sound">
+						زیارت جامعه کبیره 
+					</option>
+					<option value="319">
+						حکایت سیّد رشتی و تشرف او خدمت امام عصر(ع)
+					</option>
+					<option value="320" class="sound">
+						زیارت جامعه(زیارت سوم)
+					</option>
+					<option value="989">
+						زیارت چهارم: زیارت امین‌الله
+					</option>
+					<option value="990">
+						زیارت پنجم: زیارت رجبیه
+					</option>
+				</optgroup>
+				<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقام دوم : دعای بعد از زیارت امامان(ع)">
+					<option value="321" class="sound">
+						دعای بعد از زیارت امامان(ع)
+					</option>
+				</optgroup>
+				<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; مقام سوم : صلوات بر حجج طاهره">
+					<option value="322">
+						صلوات بر حجج طاهره
+					</option>
+					<option value="664" class="sub2">
+						صلوات بر پیامبر(ص)
+					</option>
+					<option value="665" class="sub2">
+						صلوات بر امیر مؤمنان(ع)
+					</option>
+					<option value="666" class="sub2">
+						صلوات بر سرور بانوان حضرت فاطمه(ع)
+					</option>
+					<option value="667" class="sub2">
+						صلوات بر امام حسن و امام حسین(ع)
+					</option>
+					<option value="668" class="sub2">
+						صلوات بر امام سجاد(ع)
+					</option>
+					<option value="669" class="sub2">
+						صلوات بر امام باقر(ع)
+					</option>
+					<option value="670" class="sub2">
+						صلوات بر امام صادق(ع)
+					</option>
+					<option value="671" class="sub2">
+						صلوات بر امام کاظم(ع)
+					</option>
+					<option value="672" class="sub2">
+						صلوات بر امام رضا(ع)
+					</option>
+					<option value="673" class="sub2">
+						صلوات بر امام جواد(ع) 
+					</option>
+					<option value="674" class="sub2">
+						صلوات بر امام هادی(ع) 
+					</option>
+					<option value="675" class="sub2">
+						صلوات امام حسن عسکری(ع)
+					</option>
+					<option value="676" class="sub2">
+						صلوات بر امام مهدی(ع)
+					</option>
+				</optgroup>
+				<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; زیارت انبیا، امام ‌زادگان و قبور مؤمنان">
+					<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش اول: فضیلت و کیفیت زیارت قبور پیامبران(ع)">
+						<option value="323">
+							فضیلت زیارت پیامبران(ع) و محل قبر بعضی از آنها
+						</option>
+						<option value="324">
+							کیفیت زیارت پیامبران(ع) 
+						</option>
+					</optgroup>
+					<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش دوم: فضیلت و کیفیت زیارت امام ‌زادگان(ع)">
+						<option value="325">
+							فضیلت زیارت قبور امام‌ زادگان(ع) 
+						</option>
+						<option value="993">
+							امام‌ زاده های واجب التعظیم
+						</option>
+						<option value="326" class="sound">
+							فضیلت و کیفیت زیارت حضرت معصومه(ع) در قم  
+						</option>
+						<option value="327" class="sound">
+							فضیلت و کیفیت زیارت حضرت عبدالعظیم(ع) در شهر ری
+						</option>
+						<option value="328">
+							زیارت حضرت امام ‌زاده حمزه(ع) در شهر ری
+						</option>
+						<option value="992">
+							زیارت جناب ابوالفتوح رازی و شیخ صدوق در شهر ری
+						</option>
+					</optgroup>
+					<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; &nbsp;&nbsp;&nbsp;&nbsp;&rsaquo; بخش سوم: زیارت قبور مؤمنان">
+						<option value="329">
+							ثواب و آداب زیارت قبور مؤمنان  
+						</option>
+						<option value="330">
+							اهمیت فرستادن هدیه برای مردگان  
+						</option>
+						<option value="331">
+							عبرت گرفتن از اموات
+						</option>
+					</optgroup>
+					<option value="994" label="خاتمه کتاب مفاتیح‌الجنان">
+						خاتمه کتاب مفاتیح‌الجنان
+					</option>
+				</optgroup>
+			</optgroup>
+		</optgroup>
+	</optgroup>
+	<optgroup label="ملحقات مفاتیح الجنان">
+		<option value="332" class="sound">
+			مطلب اول: دعای وداع ماه رمضان
+		</option>
+		<option value="333">
+			مطلب دوم: خطبه روز عید فطر
+		</option>
+		<option value="334">
+			مطلب سوم : زیارت جامعه برای زیارت همه ائمه(ع)  
+		</option>
+		<option value="335">
+			مطلب چهارم: دعایی با مضامین بسیار عالی که بعد از زیارت هر امام خوانده می شود 
+		</option>
+		<option value="336">
+			مطلب پنجم : زیارت وداع همه ائمه (ع)
+		</option>
+		<option value="337">
+			مطلب ششم: نامه‌ای که برای حاجت می نویسند و در آب جاری یا چاه می اندازند
+		</option>
+		<option value="338">
+			مطلب هفتم : دعایی بسیار با عظمت که در عصر غیبت باید خواند
+		</option>
+		<option value="339">
+			مطلب هشتم: آداب زیارت به نیابت و از طرف دیگران
+		</option>
+		<option value="1000">
+			زیارت ناحیه مقدسه
+		</option>
+		<option value="1001">
+			دعای هفتم صحیفه سجادیه
+		</option>
+		<option value="10011">
+			دعای بیستم صحیفه سجادیه (دعای مکارم الاخلاق)
+		</option>
+		<option value="1010">
+			حدیث شریف کساء
+		</option>
+	</optgroup>
+		    		</optgroup>
+	    	</select>
+	    	<div class="d-grid gap-2">
+		    	<button type="submit" class="btn btn-lg btn-primary btn-block" id="recite"><i class="bi bi-book"></i> مشاهده &raquo;</button>
+
+		    		
+		    		<br>
+		    	<div class="page_title zekr" id="zekr" data-tags="1">ذکر روز دوشنبه: یا قاضیَ الحاجات</div>
+		    	<div id="today" class="alert alert-info">
+		    		<div id="today_islamic"><div class="calendar_icon"><i class="bi bi-moon"></i></div><div class="calendar_text"> ٣ / شوال (١٠) / ١٤٤٤</div></div>
+		    		<div id="today_persian"><div class="calendar_icon"><i class="bi bi-sun"></i></div><div class="calendar_text"> ۴ / اردیبهشت (۲) / ۱۴۰۲</div></div>
+		    		<div id="today_gregorian"><div class="calendar_icon"><i class="bi bi-globe"></i></div><div class="calendar_text"> 2023 / 24 / April (4)</div></div>
+		    		<div class="badge bg-primary">اوقات شرعی به افق <span id="city">«تهران» <i class="bi bi-pencil"></i></span></div>
+		    		<table align="center" id="owghat" cellpadding="3px">
+		    			<tr>
+		    				<td class="passed"><i class="bi bi-brightness-alt-high"></i><br>اذان صبح</td>
+		    				<td class="passed"><i class="bi bi-brightness-alt-high-fill"></i><br>طلوع آفتاب</td>
+		    				<td class="notpassed"><i class="bi bi-brightness-high-fill"></i><br>اذان ظهر</td>
+		    				<td class="notpassed"><i class="bi bi-sunset"></i><br>غروب آفتاب</td>
+		    				<td class="notpassed"><i class="bi bi-sunrise-fill"></i><br>اذان مغرب</td>
+		    				<td class="notpassed"><i class="bi bi-moon-fill"></i><br>نیمه‌شب شرعی</td>
+		    			</tr>
+		    			<tr>
+		    				<td class="passed">04:52</td>
+		    				<td class="passed">06:22</td>
+		    				<td class="notpassed">13:03</td>
+		    				<td class="notpassed">19:44</td>
+		    				<td class="notpassed">20:03</td>
+		    				<td class="notpassed">00:18</td>
+		    			</tr>
+		    		</table>
+		    		<div class="badge bg-primary"><i class="bi bi-calendar-week-fill"></i> مناسبت‌های فردا:</div><div id="tomorrow_ocasions">- <a href="http://www.hawzah.net/fa/Magazine/View/3282/3283/14993" target="_blank">شکست حمله نظامی آمریکا به ایران در طبس</a><br></div>		    	</div>
+		    			    	<div class="alert alert-info" id="recommended">
+		    		<span class="badge bg-success"><i class="bi bi-bookmark-heart-fill"></i> دعاهای پیشنهادی</span><br>
+		    		- <a href="./?n=13">دعای روز دوشنبه</a><br>- <a href="./?n=34">زیارت امام حسن (ع) در روز دوشنبه</a><br>- <a href="./?n=35">زیارت امام حسین (ع) در روز دوشنبه</a><br>- <a href="./?n=273">زیارت عاشورا</a><br>		    	</div>
+		    	<button type="button" class="btn btn-lg btn-danger btn-block" id="search"><i class="bi bi-search"></i> جستجو &raquo;</button>
+		    	<div id="search_form" style="display: none;">
+		    		<div class="input-group mb-3">
+			    		<input type="text" name="qq" id="qq" class="form-control" placeholder="کلمه یا عبارت" autocomplete="off">
+			    		<button type="button" class="btn btn-outline-secondary" id="search_go"><i class="bi bi-search"></i></button>
+		    		</div>
+		    	</div>
+		    	<a class="btn btn-lg btn-warning btn-block" href="./?qq=bookmarks"><i class="bi bi-bookmark"></i> دعاهای نشانه‌گذاری‌شده &raquo;</a>
+		    	<button type="button" class="btn btn-lg btn-outline-secondary btn-block" id="help"><i class="bi bi-info-lg"></i> راهنما و نکات &raquo;</button>
+		    	<div id="help_notes" class="alert alert-warning fs-6 text-justify" style="display: none;">
+		    		- در صفحه اول، روی ذکر روز کلیک کنید تا تواشیح آن پخش شود.<br>
+		    		- هنگام مشاهده دعاها روی صفحه دو بار کلیک کنید تا دعا اسکرول شود و یک بار کلیک کنید تا متوقف شود.<br>
+		    		- در نیمه‌شب‌ها (قبل از سحر) در صفحه اول آلا می‌توانید به مناجات‌های زیبا گوش کنید.<br>
+		    		- در حین مطالعه دعا، می‌توانید به سمت چپ انگشت خود را روی دعا بکشید تا ترجمه فعال شود و این کار را تکرار کنید تا ترجمه غیرفعال شود.<br>
+		    	</div>
+		    	<a class="btn btn-lg btn-outline-success btn-block" href="https://zekra.aftab.cc"><i class="bi bi-book-fill"></i> ذکرا ؛ قرآن کریم &raquo;</a>
+	    	</div>
+	    </div>
+		</form>
+		<div id="footer">
+			<div class="dropdown">
+			  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+			    <i class="bi bi-gear"></i>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+			    <li><a class="dropdown-item" href="https://aftab.cc/contact" target="_blank"><i class="bi bi-telephone-fill"></i> تماس با ما</a></li>
+			  </ul>
+			</div>
+		</div>
+				<div id="copyright">Designed by <a href="https://niroomand.ir" target="_blank">Hamid Reza Niroomand</a> @ <a href="https://aftab.cc" target="_blank">Aftab.cc</a></div>
+	  </div>
+	</main>
+	<div id="scroll_speed_container"><div id="scroll_speed_close"><i class="bi bi-x"></i></div><div><input id="scroll_speed" type="range" min="1" max="20" value="10" dir="ltr"></div></div>
+	<div id="next_button"><i class="bi bi-arrow-right-circle-fill"></i></div>
+	<div class="" id="player">
+		<div><i id="player_close" class="bi bi-x-circle"></i></div>
+		<div><audio id="sound" src="" controls></audio></div>
+		<div><i id="mic" class="bi bi-mic"></i><i id="scroll" class="bi bi-arrow-down-circle"></i></div>
+	</div>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3C1KMNJSSL"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-3C1KMNJSSL');
+	</script>
+</body>
+</html>
